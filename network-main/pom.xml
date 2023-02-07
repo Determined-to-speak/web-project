@@ -4,22 +4,21 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>org.example</groupId>
-        <artifactId>web-project</artifactId>
         <version>1.0-SNAPSHOT</version>
+        <artifactId>web-project</artifactId>
+        <relativePath/> <!-- lookup parent from repository -->
     </parent>
-
     <groupId>com.example</groupId>
-    <artifactId>shiro-main</artifactId>
+    <artifactId>network-main</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-     <name>shiro-main</name>
-    <description>Demo project for Spring Boot</description>
-
-
+    <name>network-main</name>
+    <description>network-relevant</description>
     <properties>
         <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
     <dependencies>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -30,11 +29,13 @@
             <artifactId>lombok</artifactId>
             <optional>true</optional>
         </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+
     </dependencies>
 
     <build>
@@ -42,14 +43,6 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <excludes>
-                        <exclude>
-                            <groupId>org.projectlombok</groupId>
-                            <artifactId>lombok</artifactId>
-                        </exclude>
-                    </excludes>
-                </configuration>
             </plugin>
         </plugins>
     </build>
