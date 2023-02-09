@@ -20,6 +20,7 @@
     <modules>
         <module>shiro-main</module>
         <module>network-main</module>
+        <module>grpc-main</module>
     </modules>
 
     <properties>
@@ -29,5 +30,16 @@
         <maven.compiler.target>8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>5.9.2</version>
+        </dependency>
+    </dependencies>
+
+
+
 
 </project>
