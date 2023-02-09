@@ -21,6 +21,7 @@
         <module>shiro-main</module>
         <module>network-main</module>
         <module>grpc-main</module>
+        <module>web-common</module>
     </modules>
 
     <properties>
