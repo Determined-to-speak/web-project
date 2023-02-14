@@ -1,0 +1,19 @@
+
+g	java:S117³"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÆÓ¡€
+u
+java:S1488í"_Immediately return this expression instead of assigning it to the temporary variable "builder".(«‰Ÿ~
+f	java:S1161"QRename this field "value_" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—âà½
+
+java:S4144›"cUpdate this method so that its implementation is not identical to "getDefaultInstance" on line 503.(²ÃäÚùÿÿÿÿ
+>
+java:S19481"(Make "value_" transient or serializable.(—âà½
+m
+java:S30771"WUse a thread-safe type; adding "volatile" is not enough to make this field thread-safe.(—âà½
+W
+java:S1126„"AReplace this if-then-else statement by a single return statement.(ûÿ½%
+k	java:S116˜"URename this field "bitField0_" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ö»³Ä
+l	java:S116š"QRename this field "value_" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÿ‰¤¿üÿÿÿÿ
+o
+java:S2975º"SRemove this "clone" implementation; use a copy constructor or copy factory instead.(Îõ¾Òûÿÿÿÿ
+W	java:S125"<This block of commented-out lines of code should be removed.(““ùûÿÿÿÿ
+R	java:S125"<This block of commented-out lines of code should be removed.(¯Ë¶‡
