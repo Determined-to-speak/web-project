@@ -5,7 +5,7 @@ import java.util.TreeSet;
 /**
  * @author lizhijiangjiang
  * @version 1.0
- * @description: TODO
+ * @description: TreeSet会自动对元素进行排序
  * @date 2023/2/13 9:35
  */
 public class TreeSetTest {
