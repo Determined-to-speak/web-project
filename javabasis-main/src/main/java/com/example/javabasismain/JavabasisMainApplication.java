@@ -8,6 +8,7 @@ public class JavabasisMainApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(JavabasisMainApplication.class, args);
+        System.out.println(Thread.currentThread().getContextClassLoader());
     }
 
 }
