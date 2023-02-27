@@ -1,4 +1,4 @@
-package classload;
+package com.example.javabasismain.classload;
 
 public interface ISay {
 

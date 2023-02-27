@@ -1,4 +1,4 @@
-package classload;
+package com.example.javabasismain.classload;
 
 public class ClassLoadMainB {
     public static void main(String[] args) {
