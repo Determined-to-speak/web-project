@@ -9,10 +9,18 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
+
+    <!--    GA：General Availability，正式发布的版本，官方推荐使用该版本，国外很多项目都是使用GA来表示正式发布版本的-->
+    <!--    PRE：预览版，主要是用来内部开发人员和测试人员测试使用，因此不建议使用-->
+    <!--    SNAPSHOT：快照版，可以稳定使用，且该版本会一直进行小量的优化和改进-->
+    <!--    RC：Release，该版本已经相当成熟了，基本上不存在导致错误的BUG，与即将发行的正式版相差无几。-->
+    <!--    稳定性  PRE < SNAPSHOT < RC < GA-->
+
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>1.5.12.RELEASE</version>
+        <version>2.5.14</version>
+        <!--        <version>1.5.12.RELEASE</version>-->
     </parent>
 
     <name>web-project</name>
@@ -22,6 +30,9 @@
         <module>network-main</module>
         <module>grpc-main</module>
         <module>web-common</module>
+<!--        <module>web-common</module>-->
+<!--        <module>web-common</module>-->
+<!--        <module>web-common</module>-->
     </modules>
 
     <properties>
@@ -30,8 +41,7 @@
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <springboot>1.5.9.RELEASE</springboot>
-        <netty.version>4.0.33.Final</netty.version>
+        <netty.version>4.0.56.Final</netty.version>
     </properties>
 
     <dependencies>
@@ -43,6 +53,24 @@
     </dependencies>
 
 
+    <!--gson一直下载失败，这里直接修改此项目的镜像地址，全部换成国内的地址-->
+    <repositories>
+        <repository>
+            <id>oschina</id>
+            <name>oschina</name>
+            <url>http://maven.oschina.net/content/groups/public/</url>
+        </repository>
+        <repository>
+            <id>aliyun</id>
+            <name>aliyun</name>
+            <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+        </repository>
+        <repository>
+            <id>repo1</id>
+            <name>repo1</name>
+            <url>https://repo1.maven.org/maven2/</url>
+        </repository>
+    </repositories>
 
 
 </project>

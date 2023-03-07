@@ -22,12 +22,14 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="grpc-client" options="" />
-      <module name="javabasis-main" options="" />
-      <module name="network-main" options="" />
-      <module name="shiro-main" options="" />
-      <module name="springboot-main" options="" />
+      <module name="grpc-client" options="-parameters" />
+      <module name="grpc-main" options="-parameters" />
+      <module name="javabasis-main" options="-parameters" />
+      <module name="network-main" options="-parameters" />
+      <module name="shiro-main" options="-parameters" />
+      <module name="springboot-main" options="-parameters" />
       <module name="test" options="-parameters" />
+      <module name="web-common" options="-parameters" />
     </option>
   </component>
 </project>

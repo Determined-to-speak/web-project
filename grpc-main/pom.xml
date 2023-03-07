@@ -21,6 +21,7 @@
 
     <dependencies>
 
+        <!--这里将自定义的web-common添加进来，方便使用公共的类和方法-->
         <dependency>
             <groupId>org.example</groupId>
             <artifactId>web-common</artifactId>
