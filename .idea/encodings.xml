@@ -22,6 +22,5 @@
     <file url="file://$PROJECT_DIR$/web-common/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/web-common/target/generated-sources/protobuf/grpc-java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/web-common/target/generated-sources/protobuf/java" charset="UTF-8" />
-    <file url="jar://D:/maven-repo/org/junit/jupiter/junit-jupiter-params/5.7.2/junit-jupiter-params-5.7.2.jar!/org/junit/jupiter/params/shadow/com/univocity/parsers/annotations/Convert.class" charset="UTF-16BE" />
   </component>
 </project>
