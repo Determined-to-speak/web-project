@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration>
+
+    <context id="springmybatis_mysql_tables" defaultModelType="flat">
+        <!-- 该插件给实体类添加toString()方法 -->
+        <plugin type="org.mybatis.generator.plugins.ToStringPlugin"/>
+        <!-- 这个插件给由MBG生成的Java模型对象增加了equals和hashCode方法 -->
+        <plugin type="org.mybatis.generator.plugins.EqualsHashCodePlugin"/>
+        <!-- 这个插件给由MBG生成的Java模型对象实现了java.io.Serializable接口 -->
+        <plugin type="org.mybatis.generator.plugins.SerializablePlugin"/>
+        <commentGenerator>
+            <!-- 不希望生成的注释中包含时间戳 -->
+            <property name="suppressDate" value="true"/>
+        </commentGenerator>
+        <!--数据库连接 -->
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+                        connectionURL="jdbc:mysql://localhost:3306/test?useSSL=false" userId="yun_test_w"
+                        password="dfI70Pga"/>
+
+        <!--生成实体类 指定包名 以及生成的地址 （可以自定义地址，但是路径不存在不会自动创建 使用Maven生成在target目录下，会自动创建） -->
+        <javaModelGenerator targetPackage="model.customerloginlog" targetProject="src/main/java">
+            <property name="trimStrings" value="true"/>
+            <property name="enableSubPackages" value="false"/>
+        </javaModelGenerator>
+
+        <!--生成SQLMAP文件 -->
+        <sqlMapGenerator targetPackage="mybatis.sqlmap.customerloginlog" targetProject="src/main/resources">
+            <property name="enableSubPackages" value="false"/>
+        </sqlMapGenerator>
+
+        <!--生成Dao文件 可以配置 type="XMLMAPPER"生成xml的dao实现 context id="DB2Tables" 修改targetRuntime="MyBatis3" -->
+        <javaClientGenerator targetPackage="dao.customerloginlog" targetProject="src/main/java"
+                             type="XMLMAPPER">
+            <property name="enableSubPackages" value="false"/>
+        </javaClientGenerator>
+
+        <table schema="" tableName="fc_customer_login_log" domainObjectName="CustomerLoginLog">
+            <generatedKey column="log_id" sqlStatement="MySql" identity="true"></generatedKey>
+        </table>
+        <!--        <table schema="" tableName="fc_customer_org_relation" domainObjectName="CustomerOrgRelation">-->
+        <!--   Mybatis插件之自动生成不使用默认的驼峰式    -->
+        <!-- <property name="useActualColumnNames" value="false"/>-->
+        <!--<generatedKey column="id" sqlStatement="MySql" identity="true"/>-->
+        <!--        </table>-->
+
+        <!--        <table schema="" tableName="fc_log_alliance" domainObjectName="LogAlliance">-->
+        <!--            <generatedKey column="id" sqlStatement="MySql" identity="true"/>-->
+        <!--        </table>-->
+
+        <!--        <table schema="" tableName="topheadernav" domainObjectName="TopHeaderNav">-->
+        <!--            <generatedKey column="id" sqlStatement="MySql" identity="true"/>-->
+        <!--        </table>-->
+
+    </context>
+</generatorConfiguration>
