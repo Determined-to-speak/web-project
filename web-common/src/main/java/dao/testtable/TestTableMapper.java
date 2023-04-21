@@ -3,8 +3,10 @@ package dao.testtable;
 import java.util.List;
 import model.testtable.TestTable;
 import model.testtable.TestTableExample;
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
+@Mapper
 public interface TestTableMapper {
     long countByExample(TestTableExample example);
 
