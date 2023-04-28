@@ -27,8 +27,12 @@
     <file url="file://$PROJECT_DIR$/web-common/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/web-common/target/generated-sources/protobuf/grpc-java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/web-common/target/generated-sources/protobuf/java" charset="UTF-8" />
+    <file url="jar://C:/Program Files/Java/jdk1.8.0_60/jre/lib/rt.jar!/java/nio/channels/Channels.class" charset="UTF-16LE" />
     <file url="jar://C:/Program Files/Java/jdk1.8.0_60/jre/lib/rt.jar!/sun/security/util/SecurityConstants.class" charset="UTF-16LE" />
+    <file url="jar://D:/maven-repo/mysql/mysql-connector-java/8.0.13/mysql-connector-java-8.0.13.jar!/com/mysql/cj/jdbc/ConnectionImpl.class" charset="UTF-16BE" />
     <file url="jar://D:/maven-repo/org/springframework/spring-core/5.3.20/spring-core-5.3.20.jar!/org/springframework/asm/ClassReader.class" charset="UTF-16BE" />
     <file url="jar://D:/maven-repo/org/springframework/spring-core/5.3.20/spring-core-5.3.20.jar!/org/springframework/cglib/proxy/MethodInterceptor.class" charset="UTF-16LE" />
+    <file url="jar://D:/maven-repo/org/springframework/spring-tx/5.3.20/spring-tx-5.3.20.jar!/org/springframework/transaction/interceptor/TransactionInterceptor.class" charset="GBK" />
+    <file url="jar://D:/maven-repo/org/springframework/spring-web/5.3.20/spring-web-5.3.20.jar!/org/springframework/web/context/ContextLoader.properties" charset="UTF-8" />
   </component>
 </project>
