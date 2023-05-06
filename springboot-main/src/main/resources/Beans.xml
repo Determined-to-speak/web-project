@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:myCustomerUser="com.example.springbootmain.beanStudy.bean.CustomerUser"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+    com.example.springbootmain.beanStudy.bean.CustomerUser
+    META-INF/customdefinition.xsd http://www.springframework.org/schema/aop https://www.springframework.org/schema/aop/spring-aop.xsd">
+    <!--xmlns = http://www.springframework.org/schema/beans 声明名称空间-->
+    <!--https://www.cnblogs.com/zhaojiankai/p/8108832.html-->
+
+    <!-- 创建方式1：构造创建  set方式注入：值类型和引用类型 -->
+    <bean id="helloWorld" class="com.example.springbootmain.beanStudy.bean.HelloWorld">
+        <property name="b" value="Hello World!"/>
+        <property name="a" value="32"/>
+        <property name="car" ref="car"/>
+    </bean>
+
+    <bean name="car" class="com.example.springbootmain.beanStudy.bean.Car">
+        <constructor-arg index="0" value="testc"/>
+        <constructor-arg index="1" value="112233"/>
+    </bean>
+
+    <!-- 创建方式2：静态工厂创建-->
+    <bean name="helloWorld2" class="com.example.springbootmain.beanStudy.HelloWorldFactory"
+          factory-method="createHelloWorld">
+    </bean>
+
+    <!-- 创建方式3：实例工厂创建-->
+    <bean name="helloWorld3" factory-bean="helloWorldFactory" factory-method="createHelloWorld2">
+    </bean>
+
+    <bean name="helloWorldFactory" class="com.example.springbootmain.beanStudy.HelloWorldFactory"/>
+
+    <bean name="FactoryBeanTest" class="com.example.springbootmain.beanFactoryPostProcessor.FactoryBeanTestObject">
+        <property name="b" value=" Hello World!"/>
+        <property name="a" value="av"/>
+    </bean>
+
+    <bean name="CustomeBeanFactoryPostProcessor"
+          class="com.example.springbootmain.beanFactoryPostProcessor.CustomeBeanFactoryPostProcessor">
+        <property name="keywords">
+            <set>
+                <value>av</value>
+            </set>
+        </property>
+    </bean>
+
+    <bean class="com.example.springbootmain.beanStudy.beanpostprocessors.MyInstantiationAwareBeanPostProcessor"/>
+
+    <!-- 开启aop 这里用的就是自定义的注解 -->
+    <aop:aspectj-autoproxy/>
+    <bean id="test" class="com.example.springbootmain.aop.pojo.TestBean"></bean>
+    <bean class="com.example.springbootmain.aop.AspectJTest"></bean>
+
+
+    <!--    scope属性是在bean元素上加的。-->
+
+    <!--    singleton :默认值，单例对象。被标识为单例的对象在Spring容器中只会存在一份实例。-->
+    <!--    prototype :多例的。被标识为多例的对象每次在获得时才会创建，并且每次创建都是新的对象。单例对象是在容器启动时就创建了。-->
+    <!--    request :WEB 项目中，Spring 创建一个 Bean 的对象，将对象存入到 request 域中。对象与request生命周期一致。 &#45;&#45;基本不用-->
+    <!--    session :WEB 项目中，Spring 创建一个 Bean 的对象，将对象存入到 session 域中。对象与session生命周期一致。 &#45;&#45;基本不用-->
+    <!--    globalSession :WEB 项目中，应用在 Porlet 环境。如果没有 Porlet 环境那么 globalSession 相当于 session。 &#45;&#45;基本不用-->
+
+    <myCustomerUser:user id="testCustomerUser" userName="lizhijiangjiang" email="132345@qq.com"/>
+
+</beans>

@@ -1,0 +1,3 @@
+org.springframework.boot.env.EnvironmentPostProcessor=com.example.springbootmain.bootEnvironment.EnvironmentConfigByProcessor
+
+org.springframework.context.ApplicationListener=com.example.springbootmain.bootEnvironment.EnvironmentConfigByListener
