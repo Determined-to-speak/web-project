@@ -2,6 +2,11 @@
 <project version="4">
   <component name="RemoteRepositoriesConfiguration">
     <remote-repository>
+      <option name="id" value="oschina" />
+      <option name="name" value="oschina" />
+      <option name="url" value="https://repo.huaweicloud.com/repository/maven/" />
+    </remote-repository>
+    <remote-repository>
       <option name="id" value="central" />
       <option name="name" value="Central Repository" />
       <option name="url" value="https://repo.maven.apache.org/maven2" />
@@ -20,11 +25,6 @@
       <option name="id" value="central" />
       <option name="name" value="Central Repository" />
       <option name="url" value="https://mirrors.huaweicloud.com/repository/maven/" />
-    </remote-repository>
-    <remote-repository>
-      <option name="id" value="oschina" />
-      <option name="name" value="oschina" />
-      <option name="url" value="https://repo.huaweicloud.com/repository/maven/" />
     </remote-repository>
     <remote-repository>
       <option name="id" value="repo1" />
@@ -47,11 +47,6 @@
       <option name="url" value="https://maven.aliyun.com/repository/public" />
     </remote-repository>
     <remote-repository>
-      <option name="id" value="oschina" />
-      <option name="name" value="oschina" />
-      <option name="url" value="https://mirrors.huaweicloud.com/repository/maven/" />
-    </remote-repository>
-    <remote-repository>
       <option name="id" value="aliyun" />
       <option name="name" value="aliyun" />
       <option name="url" value="https://repo.huaweicloud.com/repository/maven/" />
@@ -60,6 +55,11 @@
       <option name="id" value="central" />
       <option name="name" value="Central Repository" />
       <option name="url" value="https://repo.huaweicloud.com/repository/maven/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="oschina" />
+      <option name="name" value="oschina" />
+      <option name="url" value="https://mirrors.huaweicloud.com/repository/maven/" />
     </remote-repository>
     <remote-repository>
       <option name="id" value="repo1" />
