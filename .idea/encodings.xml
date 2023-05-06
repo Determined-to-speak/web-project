@@ -34,5 +34,7 @@
     <file url="jar://D:/maven-repo/org/springframework/spring-core/5.3.20/spring-core-5.3.20.jar!/org/springframework/cglib/proxy/MethodInterceptor.class" charset="UTF-16LE" />
     <file url="jar://D:/maven-repo/org/springframework/spring-tx/5.3.20/spring-tx-5.3.20.jar!/org/springframework/transaction/interceptor/TransactionInterceptor.class" charset="GBK" />
     <file url="jar://D:/maven-repo/org/springframework/spring-web/5.3.20/spring-web-5.3.20.jar!/org/springframework/web/context/ContextLoader.properties" charset="UTF-8" />
+    <file url="jar://D:/maven-repo/org/springframework/spring-web/5.3.20/spring-web-5.3.20.jar!/org/springframework/web/multipart/commons/CommonsMultipartResolver.class" charset="GBK" />
+    <file url="jar://D:/maven-repo/org/springframework/spring-webmvc/5.3.20/spring-webmvc-5.3.20.jar!/org/springframework/web/servlet/DispatcherServlet.properties" charset="UTF-8" />
   </component>
 </project>
