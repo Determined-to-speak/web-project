@@ -2,7 +2,7 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/372d95b1-4cb6-4c03-a28e-e70cf4cbe39b/console.sql" charset="US-ASCII" />
-    <file url="file://$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" charset="US-ASCII" />
+    <file url="file://$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/grpc-client/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/grpc-main/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/grpc-main/src/main/resources" charset="UTF-8" />
@@ -21,7 +21,7 @@
     <file url="file://$PROJECT_DIR$/springboot-main/src/main/resources/META-INF/spring.schemas" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-main/src/main/resources/application-prod.properties" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-main/src/main/resources/application-test.properties" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/springboot-main/src/main/resources/application.properties" charset="US-ASCII" />
+    <file url="file://$PROJECT_DIR$/springboot-main/src/main/resources/application.properties" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/web-common/src/main/java" charset="UTF-8" />
@@ -37,5 +37,11 @@
     <file url="jar://D:/maven-repo/org/springframework/spring-web/5.3.20/spring-web-5.3.20.jar!/org/springframework/web/context/ContextLoader.properties" charset="UTF-8" />
     <file url="jar://D:/maven-repo/org/springframework/spring-web/5.3.20/spring-web-5.3.20.jar!/org/springframework/web/multipart/commons/CommonsMultipartResolver.class" charset="GBK" />
     <file url="jar://D:/maven-repo/org/springframework/spring-webmvc/5.3.20/spring-webmvc-5.3.20.jar!/org/springframework/web/servlet/DispatcherServlet.properties" charset="UTF-8" />
+    <file url="jar://$PROJECT_DIR$/../../maven-repo/org/springframework/boot/spring-boot-autoconfigure/2.5.14/spring-boot-autoconfigure-2.5.14-sources.jar!/META-INF/spring.factories" charset="UTF-8" />
+    <file url="jar://$PROJECT_DIR$/../../maven-repo/org/springframework/boot/spring-boot-autoconfigure/2.5.14/spring-boot-autoconfigure-2.5.14.jar!/META-INF/spring.factories" charset="UTF-8" />
+    <file url="jar://$PROJECT_DIR$/../../maven-repo/org/springframework/boot/spring-boot/2.5.14/spring-boot-2.5.14.jar!/META-INF/spring.factories" charset="UTF-8" />
+    <file url="jar://$PROJECT_DIR$/../../maven-repo/org/springframework/boot/spring-boot/2.5.14/spring-boot-2.5.14.jar!/org/springframework/boot/ApplicationArguments.class" charset="UTF-16LE" />
+    <file url="jar://$PROJECT_DIR$/../../maven-repo/org/springframework/spring-beans/5.3.20/spring-beans-5.3.20.jar!/META-INF/spring.factories" charset="US-ASCII" />
+    <file url="jar://$PROJECT_DIR$/../../maven-repo/org/springframework/spring-beans/5.3.20/spring-beans-5.3.20.jar!/org/springframework/beans/factory/annotation/Value.class" charset="UTF-16BE" />
   </component>
 </project>
