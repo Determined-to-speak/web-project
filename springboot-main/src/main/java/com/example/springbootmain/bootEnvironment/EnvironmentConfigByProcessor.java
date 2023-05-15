@@ -18,6 +18,7 @@ import java.util.Map;
 
 @Configuration
 public class EnvironmentConfigByProcessor implements EnvironmentPostProcessor {
+
     @Override
     public void postProcessEnvironment(ConfigurableEnvironment environment, SpringApplication application) {
         Assert.notNull(environment, "当前environment还未赋值");
@@ -25,4 +26,5 @@ public class EnvironmentConfigByProcessor implements EnvironmentPostProcessor {
         customerPro.put("test-EnvironmentConfigByProcessor", "this is EnvironmentConfigByProcessor");
         environment.getPropertySources().addLast(new MapPropertySource("testProcessor", customerPro));
     }
+
 }

@@ -16,10 +16,10 @@ public class ClassReflectTest {
             Car car2 = (Car) constructor2.newInstance();
             car2.print();
 
-            Constructor constructor3 = clazz.getDeclaredConstructor();
+            Constructor constructor3 = clazz.getDeclaredConstructor(String.class);
             constructor3.setAccessible(true);
-            Car car3 = (Car) constructor2.newInstance();
-            car2.print();
+            Car car3 = (Car) constructor3.newInstance("lzj www");
+            car3.print();
 
 
         } catch (Exception e) {
