@@ -24,7 +24,7 @@ public class CommonTest {
         System.out.println("默认加载当前项目中的class类：" + aclazz);
         //endregion
 
-        //region 自定义的加载器加载其他目录下的类
+        //region 自定义的加载器加载其他目录下的类  MyClassLoader
         ClassLoader myClassLoader = new MyClassLoader(new File("E:\\IdeaProjects\\classloadtest"));
         Class<?> aOtherClass = myClassLoader.loadClass("A");
         try {
@@ -32,7 +32,19 @@ public class CommonTest {
         } catch (Exception e) {
             throw new RuntimeException();
         }
-        System.out.println("加载其他项目中的class类：" + aOtherClass);
+        System.out.println("MyClassLoader加载其他项目中的class类：" + aOtherClass);
+        //endregion
+
+
+        //region 自定义的加载器加载其他目录下的类  OverrideFindClassClassLoader
+        ClassLoader myClassLoader1 = new OverrideFindClassClassLoader(new File("E:\\IdeaProjects\\classloadtest"));
+        Class<?> aOtherClass1 = myClassLoader1.loadClass("A");
+        try {
+            aOtherClass1.newInstance();
+        } catch (Exception e) {
+            throw new RuntimeException();
+        }
+        System.out.println("OverrideFindClassClassLoader加载其他项目中的class类：" + aOtherClass1);
         //endregion
 
     }
