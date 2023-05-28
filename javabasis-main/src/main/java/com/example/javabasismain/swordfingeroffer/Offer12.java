@@ -1,31 +1,107 @@
 package com.example.javabasismain.swordfingeroffer;
 
+import com.google.common.collect.Queues;
+
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.concurrent.LinkedBlockingDeque;
+
 /**
- * 把一个数组最开始的若干个元素搬到数组的末尾，我们称之为数组的旋转。
+ * 给定一个 m x n 二维字符网格 board 和一个字符串单词 word 。如果 word 存在于网格中，返回 true ；否则，返回 false 。
  * <p>
- * 给你一个可能存在 重复 元素值的数组 numbers ，它原来是一个升序排列的数组，并按上述情形进行了一次旋转。请返回旋转数组的最小元素。例如，数组 [3,4,5,1,2] 为 [1,2,3,4,5] 的一次旋转，该数组的最小值为 1。  
- * <p>
- * 注意，数组 [a[0], a[1], a[2], ..., a[n-1]] 旋转一次 的结果为数组 [a[n-1], a[0], a[1], a[2], ..., a[n-2]] 。
+ * 单词必须按照字母顺序，通过相邻的单元格内的字母构成，其中“相邻”单元格是那些水平相邻或垂直相邻的单元格。同一个单元格内的字母不允许被重复使用。
  * <p>
  * 来源：力扣（LeetCode）
- * 链接：https://leetcode.cn/problems/xuan-zhuan-shu-zu-de-zui-xiao-shu-zi-lcof
+ * 链接：https://leetcode.cn/problems/ju-zhen-zhong-de-lu-jing-lcof
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
 public class Offer12 {
+
     public static void main(String[] args) {
-        System.out.println(minArray(new int[]{3, 4, 5, 1, 2}));
-        System.out.println(minArray(new int[]{2, 2, 2, 0, 1}));
+        char[][] board1 = new char[][]{{'A', 'B', 'C', 'E'}, {'S', 'F', 'C', 'S'}, {'A', 'D', 'E', 'E'}};
+        char[][] board2 = new char[][]{{'a', 'b'}, {'c', 'd'}};
+        char[][] board3 = new char[][]{{'A', 'B', 'C', 'E'}, {'S', 'F', 'C', 'S'}, {'A', 'D', 'E', 'E'}};
+        char[][] board4 = new char[][]{{'C', 'A', 'A'}, {'A', 'A', 'A'}, {'B', 'C', 'D'}};
+        char[][] board5 = new char[][]{{'A', 'B', 'C', 'E'}, {'S', 'F', 'C', 'S'}, {'A', 'D', 'E', 'E'}};
+
+
+//        System.out.println(exist(board1, "ABCCED"));
+//        System.out.println(exist(board2, "abcd"));
+        System.out.println(exist(board5, "ABCB"));
+        System.out.println(exist(board3, "ABCCED"));
+        System.out.println(exist(board4, "AAB"));
+
     }
 
-    public static int minArray(int[] numbers) {
-        if (numbers.length == 1) {
-            return numbers[0];
+    public static boolean exist(char[][] board, String word) {
+
+        Queue<Character> words = new LinkedList<>();
+        for (Character w : word.toCharArray()) {
+            words.add(w);
         }
-        for (int i = 0; i < numbers.length - 1; i++) {
-            if (numbers[i + 1] < numbers[i]) {
-                return numbers[i + 1];
+
+        for (int x = 0; x < board.length; x++) {
+            for (int y = 0; y < board[0].length; y++) {
+
+                boolean[][] flag = new boolean[board.length][board[0].length];
+                for (int i = 0; i < board.length; i++) {
+                    for (int j = 0; j < board[0].length; j++) {
+                        flag[i][j] = false;
+                    }
+                }
+
+
+                if (dealEveryNumber(x, y, board, new LinkedList<>(words), flag)) {
+                    return true;
+                }
             }
         }
-        return numbers[0];
+        return false;
     }
+
+    /**
+     * 使用回溯法的时候一定要注意深拷贝问题！！！！
+     *
+     * @param x
+     * @param y
+     * @param board
+     * @param word
+     * @param flag
+     * @return
+     */
+    private static boolean dealEveryNumber(int x, int y, char[][] board, Queue<Character> word, boolean[][] flag) {
+
+        if (word.isEmpty()) {
+            return true;
+        }
+
+        if (x < 0 || x > board.length - 1 || y < 0 || y > board[0].length - 1) {
+            return false;
+        }
+        if (flag[x][y]) {
+            return false;
+        }
+
+        Queue<Character> newWord = new LinkedList<>(word);
+        boolean[][] newFlag = new boolean[flag.length][flag[0].length];
+        for (int i = 0; i < flag.length; i++) {
+            System.arraycopy(flag[i], 0, newFlag[i], 0, flag[0].length);
+        }
+
+        if (board[x][y] == newWord.peek() && !newFlag[x][y]) {
+            newWord.poll();
+            newFlag[x][y] = true;
+
+            return dealEveryNumber(x + 1, y, board, newWord, newFlag)
+                    || dealEveryNumber(x - 1, y, board, newWord, newFlag)
+                    || dealEveryNumber(x, y + 1, board, newWord, newFlag)
+                    || dealEveryNumber(x, y - 1, board, newWord, newFlag);
+        }
+
+        return false;
+    }
+
+
 }
