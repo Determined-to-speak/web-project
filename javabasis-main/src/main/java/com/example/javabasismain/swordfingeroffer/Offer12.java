@@ -27,8 +27,8 @@ public class Offer12 {
         char[][] board5 = new char[][]{{'A', 'B', 'C', 'E'}, {'S', 'F', 'C', 'S'}, {'A', 'D', 'E', 'E'}};
 
 
-//        System.out.println(exist(board1, "ABCCED"));
-//        System.out.println(exist(board2, "abcd"));
+        System.out.println(exist(board1, "ABCCED"));
+        System.out.println(exist(board2, "abcd"));
         System.out.println(exist(board5, "ABCB"));
         System.out.println(exist(board3, "ABCCED"));
         System.out.println(exist(board4, "AAB"));
@@ -46,16 +46,10 @@ public class Offer12 {
             for (int y = 0; y < board[0].length; y++) {
 
                 boolean[][] flag = new boolean[board.length][board[0].length];
-                for (int i = 0; i < board.length; i++) {
-                    for (int j = 0; j < board[0].length; j++) {
-                        flag[i][j] = false;
-                    }
-                }
-
-
                 if (dealEveryNumber(x, y, board, new LinkedList<>(words), flag)) {
                     return true;
                 }
+
             }
         }
         return false;
