@@ -30,6 +30,7 @@
     <file url="jar://C:/Program Files/Java/jdk-1.8/jre/lib/javaws.jar!/com/sun/jnlp/JNLPClassLoader.class" charset="UTF-16BE" />
     <file url="jar://C:/Program Files/Java/jdk-1.8/jre/lib/rt.jar!/sun/misc/Unsafe.class" charset="GBK" />
     <file url="jar://C:/Program Files/Java/jdk-1.8/jre/lib/rt.jar!/sun/misc/VM.class" charset="UTF-16BE" />
+    <file url="jar://C:/Program Files/Java/jdk-1.8/jre/lib/rt.jar!/sun/nio/ch/IOUtil.class" charset="UTF-16LE" />
     <file url="jar://C:/Program Files/Java/jdk-1.8/jre/lib/rt.jar!/sun/nio/ch/Interruptible.class" charset="GBK" />
     <file url="jar://C:/Program Files/Java/jdk-1.8/jre/lib/rt.jar!/sun/nio/ch/SocketChannelImpl.class" charset="UTF-16LE" />
     <file url="jar://C:/Program Files/Java/jdk-1.8/jre/lib/rt.jar!/sun/reflect/Reflection.class" charset="UTF-16LE" />
