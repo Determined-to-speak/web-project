@@ -28,8 +28,12 @@
     <file url="file://$PROJECT_DIR$/web-common/target/generated-sources/protobuf/grpc-java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/web-common/target/generated-sources/protobuf/java" charset="UTF-8" />
     <file url="jar://C:/Program Files/Java/jdk-1.8/jre/lib/javaws.jar!/com/sun/jnlp/JNLPClassLoader.class" charset="UTF-16BE" />
+    <file url="jar://C:/Program Files/Java/jdk-1.8/jre/lib/rt.jar!/java/lang/System.class" charset="UTF-16BE" />
+    <file url="jar://C:/Program Files/Java/jdk-1.8/jre/lib/rt.jar!/sun/misc/JavaLangAccess.class" charset="UTF-16LE" />
     <file url="jar://C:/Program Files/Java/jdk-1.8/jre/lib/rt.jar!/sun/misc/Unsafe.class" charset="GBK" />
     <file url="jar://C:/Program Files/Java/jdk-1.8/jre/lib/rt.jar!/sun/misc/VM.class" charset="UTF-16BE" />
+    <file url="jar://C:/Program Files/Java/jdk-1.8/jre/lib/rt.jar!/sun/nio/ch/FileChannelImpl.class" charset="UTF-16LE" />
+    <file url="jar://C:/Program Files/Java/jdk-1.8/jre/lib/rt.jar!/sun/nio/ch/FileDispatcherImpl.class" charset="GBK" />
     <file url="jar://C:/Program Files/Java/jdk-1.8/jre/lib/rt.jar!/sun/nio/ch/IOUtil.class" charset="UTF-16LE" />
     <file url="jar://C:/Program Files/Java/jdk-1.8/jre/lib/rt.jar!/sun/nio/ch/Interruptible.class" charset="GBK" />
     <file url="jar://C:/Program Files/Java/jdk-1.8/jre/lib/rt.jar!/sun/nio/ch/Net.class" charset="UTF-16BE" />

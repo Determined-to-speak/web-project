@@ -15,7 +15,7 @@ import java.util.Set;
 /**
  * Java Selector学习实例代码
  * <p>
- * Java中的NIO是看Tomcat的基础
+ * Java中的NIO是看Tomcat的基础   本demo是NIO的简单应用，认真看，理解好每一行代码
  * <p>
  * <p>
  * 参考资料  https://zhuanlan.zhihu.com/p/27434028
