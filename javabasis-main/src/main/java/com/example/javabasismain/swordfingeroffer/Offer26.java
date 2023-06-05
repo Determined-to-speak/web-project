@@ -30,6 +30,6 @@ public class Offer26 {
         if (a.val != b.val) {
             return false;
         }
-        return a.val == b.val && EqualTree(a.left, b.left) && EqualTree(a.right, b.right);
+        return EqualTree(a.left, b.left) && EqualTree(a.right, b.right);
     }
 }
