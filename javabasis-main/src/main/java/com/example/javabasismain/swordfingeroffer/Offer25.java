@@ -32,7 +32,9 @@ public class Offer25 {
         ListNode result = null;
         if (l1.val < l2.val) {
             result = l1;
+            System.out.println("变之前：" + result.val + " " + l1.val);
             l1 = l1.next;
+            System.out.println("变之后：" + result.val + " " + l1.val);
             result.next = mergeTwoLists(l1, l2);
         } else {
             result = l2;
