@@ -14,8 +14,8 @@ public class Offer29 {
         int[][] matrix1 = new int[][]{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
         int[][] matrix2 = new int[][]{{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}};
         int[][] matrix3 = new int[][]{{3}, {2}};
-//        System.out.println(Arrays.toString(spiralOrder(matrix1)));
-//        System.out.println(Arrays.toString(spiralOrder(matrix2)));
+        System.out.println(Arrays.toString(spiralOrder(matrix1)));
+        System.out.println(Arrays.toString(spiralOrder(matrix2)));
         System.out.println(Arrays.toString(spiralOrder(matrix3)));
     }
 
