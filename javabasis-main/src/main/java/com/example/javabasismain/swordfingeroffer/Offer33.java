@@ -13,28 +13,47 @@ public class Offer33 {
         System.out.println(verifyPostorder(new int[]{1, 3, 2, 6, 5}));
     }
 
+
     public static boolean verifyPostorder(int[] postorder) {
-        if (postorder == null || postorder.length == 0) {
-            return true;
-        }
-        int root = postorder[postorder.length - 1];
-        int i = 0;
-        for (; i < postorder.length - 1; i++) {
-            if (postorder[i] > root) break;
-        }
-
-        int j = i;
-        for (; j < postorder.length - 1; j++) {
-            if (postorder[j] < root) return false;
-        }
-
-        int[] left = new int[i];
-        System.arraycopy(postorder, 0, left, 0, i);
-        int[] right = new int[postorder.length - i - 1];
-        System.arraycopy(postorder, i, right, 0, postorder.length - i - 1);
-
-        return verifyPostorder(left) && verifyPostorder(right);
+        return recur(postorder, 0, postorder.length - 1);
     }
+
+    private static boolean recur(int[] postorder, int i, int j) {
+        if (i > j) return true;
+        int p = i;
+        while (postorder[p] < postorder[j]) {
+            p++;
+        }
+        int m = p;
+        while (postorder[p] > postorder[j]) {
+            p++;
+        }
+        return p == j && recur(postorder, i, m - 1) && recur(postorder, m, j - 1);
+    }
+
+
+//    public static boolean verifyPostorder(int[] postorder) {
+//        if (postorder == null || postorder.length == 0) {
+//            return true;
+//        }
+//        int root = postorder[postorder.length - 1];
+//        int i = 0;
+//        for (; i < postorder.length - 1; i++) {
+//            if (postorder[i] > root) break;
+//        }
+//
+//        int j = i;
+//        for (; j < postorder.length - 1; j++) {
+//            if (postorder[j] < root) return false;
+//        }
+//
+//        int[] left = new int[i];
+//        System.arraycopy(postorder, 0, left, 0, i);
+//        int[] right = new int[postorder.length - i - 1];
+//        System.arraycopy(postorder, i, right, 0, postorder.length - i - 1);
+//
+//        return verifyPostorder(left) && verifyPostorder(right);
+//    }
 
 
 }
