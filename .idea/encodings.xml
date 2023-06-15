@@ -39,6 +39,7 @@
     <file url="jar://C:/Program Files/Java/jdk-1.8/jre/lib/rt.jar!/sun/nio/ch/Net.class" charset="UTF-16BE" />
     <file url="jar://C:/Program Files/Java/jdk-1.8/jre/lib/rt.jar!/sun/nio/ch/SelectorImpl.class" charset="UTF-16BE" />
     <file url="jar://C:/Program Files/Java/jdk-1.8/jre/lib/rt.jar!/sun/nio/ch/ServerSocketChannelImpl.class" charset="UTF-16BE" />
+    <file url="jar://C:/Program Files/Java/jdk-1.8/jre/lib/rt.jar!/sun/nio/ch/SocketAdaptor.class" charset="GBK" />
     <file url="jar://C:/Program Files/Java/jdk-1.8/jre/lib/rt.jar!/sun/nio/ch/SocketChannelImpl.class" charset="UTF-16LE" />
     <file url="jar://C:/Program Files/Java/jdk-1.8/jre/lib/rt.jar!/sun/nio/ch/WindowsSelectorImpl.class" charset="GBK" />
     <file url="jar://C:/Program Files/Java/jdk-1.8/jre/lib/rt.jar!/sun/nio/ch/WindowsSelectorProvider.class" charset="UTF-16LE" />
