@@ -83,7 +83,9 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+
                 <configuration>
+                    <mainClass>com.example.springbootmain.SpringbootMainApplication</mainClass>
                     <excludes>
                         <exclude>
                             <groupId>org.projectlombok</groupId>
@@ -91,6 +93,7 @@
                         </exclude>
                     </excludes>
                 </configuration>
+
             </plugin>
         </plugins>
     </build>
