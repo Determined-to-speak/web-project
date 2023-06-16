@@ -86,18 +86,20 @@
         </extensions>
 
         <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <excludes>
-                        <exclude>
-                            <groupId>org.projectlombok</groupId>
-                            <artifactId>lombok</artifactId>
-                        </exclude>
-                    </excludes>
-                </configuration>
-            </plugin>
+
+            <!--            web-common是一个公共的包，这个包只作为依赖-->
+            <!--            <plugin>-->
+            <!--                <groupId>org.springframework.boot</groupId>-->
+            <!--                <artifactId>spring-boot-maven-plugin</artifactId>-->
+            <!--                <configuration>-->
+            <!--                    <excludes>-->
+            <!--                        <exclude>-->
+            <!--                            <groupId>org.projectlombok</groupId>-->
+            <!--                            <artifactId>lombok</artifactId>-->
+            <!--                        </exclude>-->
+            <!--                    </excludes>-->
+            <!--                </configuration>-->
+            <!--            </plugin>-->
 
             <plugin>
                 <groupId>org.xolstice.maven.plugins</groupId>

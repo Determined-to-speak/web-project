@@ -9,6 +9,7 @@
     <groupId>org.example</groupId>
     <artifactId>web-project</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <!--    下面这个只有父模块用pom，子模块一般都是jar-->
     <packaging>pom</packaging>
 
 
@@ -28,10 +29,10 @@
     <name>web-project</name>
 
     <modules>
+        <module>web-common</module>
         <module>shiro-main</module>
         <module>network-main</module>
         <module>grpc-main</module>
-        <module>web-common</module>
         <module>grpc-client</module>
         <module>javabasis-main</module>
         <module>springboot-main</module>

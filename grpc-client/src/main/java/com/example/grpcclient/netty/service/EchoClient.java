@@ -22,10 +22,10 @@ import java.util.concurrent.TimeUnit;
 public class EchoClient {
 
     //服务器ip地址
-    @Value("${netty.server.ip}")
+    @Value("${netty.server.ip:127.0.0.1}")
     private String host;
     //服务器端口
-    @Value("${netty.server.port}")
+    @Value("${netty.server.port:8083}")
     private int port;
     //通过nio方式来接收连接和处理连接
     private EventLoopGroup group = new NioEventLoopGroup();

@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/372d95b1-4cb6-4c03-a28e-e70cf4cbe39b/console.sql" charset="US-ASCII" />
     <file url="file://$PROJECT_DIR$/grpc-client/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/grpc-client/src/main/resources/application.properties" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/grpc-main/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/grpc-main/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/grpc-main/src/main/resources/application.properties" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/grpc-main/target/generated-sources/protobuf/grpc-java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/grpc-main/target/generated-sources/protobuf/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/javabasis-main/src/main/java" charset="UTF-8" />
@@ -27,23 +28,6 @@
     <file url="file://$PROJECT_DIR$/web-common/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/web-common/target/generated-sources/protobuf/grpc-java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/web-common/target/generated-sources/protobuf/java" charset="UTF-8" />
-    <file url="jar://C:/Program Files/Java/jdk-1.8/jre/lib/javaws.jar!/com/sun/jnlp/JNLPClassLoader.class" charset="UTF-16BE" />
-    <file url="jar://C:/Program Files/Java/jdk-1.8/jre/lib/rt.jar!/java/lang/System.class" charset="UTF-16BE" />
-    <file url="jar://C:/Program Files/Java/jdk-1.8/jre/lib/rt.jar!/sun/misc/JavaLangAccess.class" charset="UTF-16LE" />
-    <file url="jar://C:/Program Files/Java/jdk-1.8/jre/lib/rt.jar!/sun/misc/Unsafe.class" charset="GBK" />
-    <file url="jar://C:/Program Files/Java/jdk-1.8/jre/lib/rt.jar!/sun/misc/VM.class" charset="UTF-16BE" />
-    <file url="jar://C:/Program Files/Java/jdk-1.8/jre/lib/rt.jar!/sun/nio/ch/FileChannelImpl.class" charset="UTF-16LE" />
-    <file url="jar://C:/Program Files/Java/jdk-1.8/jre/lib/rt.jar!/sun/nio/ch/FileDispatcherImpl.class" charset="GBK" />
-    <file url="jar://C:/Program Files/Java/jdk-1.8/jre/lib/rt.jar!/sun/nio/ch/IOUtil.class" charset="UTF-16LE" />
-    <file url="jar://C:/Program Files/Java/jdk-1.8/jre/lib/rt.jar!/sun/nio/ch/Interruptible.class" charset="GBK" />
-    <file url="jar://C:/Program Files/Java/jdk-1.8/jre/lib/rt.jar!/sun/nio/ch/Net.class" charset="UTF-16BE" />
-    <file url="jar://C:/Program Files/Java/jdk-1.8/jre/lib/rt.jar!/sun/nio/ch/SelectorImpl.class" charset="UTF-16BE" />
-    <file url="jar://C:/Program Files/Java/jdk-1.8/jre/lib/rt.jar!/sun/nio/ch/ServerSocketChannelImpl.class" charset="UTF-16BE" />
-    <file url="jar://C:/Program Files/Java/jdk-1.8/jre/lib/rt.jar!/sun/nio/ch/SocketAdaptor.class" charset="GBK" />
-    <file url="jar://C:/Program Files/Java/jdk-1.8/jre/lib/rt.jar!/sun/nio/ch/SocketChannelImpl.class" charset="UTF-16LE" />
-    <file url="jar://C:/Program Files/Java/jdk-1.8/jre/lib/rt.jar!/sun/nio/ch/WindowsSelectorImpl.class" charset="GBK" />
-    <file url="jar://C:/Program Files/Java/jdk-1.8/jre/lib/rt.jar!/sun/nio/ch/WindowsSelectorProvider.class" charset="UTF-16LE" />
-    <file url="jar://C:/Program Files/Java/jdk-1.8/jre/lib/rt.jar!/sun/reflect/Reflection.class" charset="UTF-16LE" />
     <file url="jar://C:/Program Files/Java/jdk1.8.0_60/jre/lib/rt.jar!/java/nio/channels/Channels.class" charset="UTF-16LE" />
     <file url="jar://C:/Program Files/Java/jdk1.8.0_60/jre/lib/rt.jar!/sun/security/util/SecurityConstants.class" charset="UTF-16LE" />
     <file url="jar://D:/maven-repo/mysql/mysql-connector-java/8.0.13/mysql-connector-java-8.0.13.jar!/com/mysql/cj/jdbc/ConnectionImpl.class" charset="UTF-16BE" />
@@ -53,7 +37,5 @@
     <file url="jar://D:/maven-repo/org/springframework/spring-web/5.3.20/spring-web-5.3.20.jar!/org/springframework/web/context/ContextLoader.properties" charset="UTF-8" />
     <file url="jar://D:/maven-repo/org/springframework/spring-web/5.3.20/spring-web-5.3.20.jar!/org/springframework/web/multipart/commons/CommonsMultipartResolver.class" charset="GBK" />
     <file url="jar://D:/maven-repo/org/springframework/spring-webmvc/5.3.20/spring-webmvc-5.3.20.jar!/org/springframework/web/servlet/DispatcherServlet.properties" charset="UTF-8" />
-    <file url="jar://$PROJECT_DIR$/../../maven-repo/io/grpc/grpc-netty-shaded/1.52.1/grpc-netty-shaded-1.52.1.jar!/io/grpc/netty/shaded/io/netty/channel/nio/SelectedSelectionKeySetSelector.class" charset="UTF-16LE" />
-    <file url="jar://$PROJECT_DIR$/../../maven-repo/org/apache/tomcat/embed/tomcat-embed-core/9.0.63/tomcat-embed-core-9.0.63.jar!/org/apache/catalina/loader/LocalStrings.properties" charset="UTF-8" />
   </component>
 </project>

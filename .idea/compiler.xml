@@ -30,6 +30,7 @@
       <module name="springboot-main" options="-parameters" />
       <module name="test" options="-parameters" />
       <module name="web-common" options="-parameters" />
+      <module name="web-project" options="" />
     </option>
   </component>
 </project>
