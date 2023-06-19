@@ -27,6 +27,8 @@ public class MyClassLoaderTest {
         System.out.println("默认加载当前项目中的class类：" + aclazz);
         //endregion
 
+        //下面的两个文件，另外搞两个测试类，分别编译出class文件
+
         //region 自定义的加载器加载其他目录下的类  MyClassLoader
         ClassLoader myClassLoader = new MyClassLoader(new File("E:\\IdeaProjects\\classloadertest"));
         Class<?> aOtherClass = myClassLoader.loadClass("A");
