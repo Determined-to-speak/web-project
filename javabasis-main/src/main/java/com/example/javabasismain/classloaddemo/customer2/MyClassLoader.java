@@ -1,4 +1,4 @@
-package com.example.javabasismain.classloaddemo.customer;
+package com.example.javabasismain.classloaddemo.customer2;
 
 import java.io.File;
 import java.io.FileInputStream;

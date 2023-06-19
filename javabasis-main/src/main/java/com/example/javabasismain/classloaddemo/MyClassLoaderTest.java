@@ -1,8 +1,11 @@
-package com.example.javabasismain.classloaddemo.customer;
+package com.example.javabasismain.classloaddemo;
+
+import com.example.javabasismain.classloaddemo.customer2.MyClassLoader;
+import com.example.javabasismain.classloaddemo.customer3.OverrideFindClassClassLoader;
 
 import java.io.File;
 
-public class CommonTest {
+public class MyClassLoaderTest {
 
     public void test() throws ClassNotFoundException {
         ClassLoader contextClassLoader = Thread.currentThread().getContextClassLoader();
@@ -15,7 +18,7 @@ public class CommonTest {
 
         //region 默认类加载器加载当前项目下的类
         ClassLoader threadClassLoader = Thread.currentThread().getContextClassLoader();
-        Class<?> aclazz = threadClassLoader.loadClass("com.example.javabasismain.classloaddemo.customer.A");
+        Class<?> aclazz = threadClassLoader.loadClass("com.example.javabasismain.classloaddemo.customer1.A");
         try {
             aclazz.newInstance();
         } catch (Exception e) {
@@ -25,7 +28,7 @@ public class CommonTest {
         //endregion
 
         //region 自定义的加载器加载其他目录下的类  MyClassLoader
-        ClassLoader myClassLoader = new MyClassLoader(new File("E:\\IdeaProjects\\classloadtest"));
+        ClassLoader myClassLoader = new MyClassLoader(new File("E:\\IdeaProjects\\classloadertest"));
         Class<?> aOtherClass = myClassLoader.loadClass("A");
         try {
             aOtherClass.newInstance();
@@ -37,7 +40,7 @@ public class CommonTest {
 
 
         //region 自定义的加载器加载其他目录下的类  OverrideFindClassClassLoader
-        ClassLoader myClassLoader1 = new OverrideFindClassClassLoader(new File("E:\\IdeaProjects\\classloadtest"));
+        ClassLoader myClassLoader1 = new OverrideFindClassClassLoader(new File("E:\\IdeaProjects\\classloadertest"));
         Class<?> aOtherClass1 = myClassLoader1.loadClass("A");
         try {
             aOtherClass1.newInstance();
