@@ -1,9 +1,6 @@
-package com.example.springbootmain.mybatis;
+package com.example.springbootmain.myBatis;
 
 
-import org.mybatis.spring.SqlSessionFactoryBean;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 

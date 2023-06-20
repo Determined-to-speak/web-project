@@ -1,12 +1,10 @@
-package com.example.springbootmain.springmvc;
+package com.example.springbootmain.springMVC;
 
-import org.springframework.context.event.EventListener;
 import org.springframework.stereotype.Component;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
-import javax.servlet.annotation.WebListener;
 
 /**
  * 自定义的 ServletContextListener

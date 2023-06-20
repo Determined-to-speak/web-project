@@ -1,6 +1,5 @@
-package com.example.springbootmain.applicationcontext;
+package com.example.springbootmain.applicationContext;
 
-import com.google.protobuf.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.web.bind.annotation.GetMapping;
