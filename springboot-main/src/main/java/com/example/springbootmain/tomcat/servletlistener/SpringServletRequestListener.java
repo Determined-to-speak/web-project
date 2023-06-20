@@ -1,13 +1,15 @@
-package com.example.springbootmain.tomcat;
+package com.example.springbootmain.tomcat.servletlistener;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import javax.servlet.ServletRequestEvent;
 import javax.servlet.ServletRequestListener;
+import javax.servlet.annotation.WebListener;
 
 @Component
-public class MyServletRequestListener implements ServletRequestListener {
+@WebListener
+public class SpringServletRequestListener implements ServletRequestListener {
 
     @Autowired
     RequestTimes requestTimes;
