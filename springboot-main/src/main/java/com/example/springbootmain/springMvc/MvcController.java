@@ -1,4 +1,4 @@
-package com.example.springbootmain.springMVC;
+package com.example.springbootmain.springMvc;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

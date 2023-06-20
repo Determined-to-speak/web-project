@@ -1,4 +1,4 @@
-package com.example.springbootmain.springMVC;
+package com.example.springbootmain.springMvc;
 
 import org.springframework.stereotype.Component;
 
