@@ -35,8 +35,9 @@ import java.nio.file.Paths;
 @Component
 public class HelloLucene {
 
+
     /**
-     * 创建索引
+     * 创建索引    每次调用一次这个方法都会重新创建索引文件，会创建一个新的段(segement)
      */
     public void index() {
 
