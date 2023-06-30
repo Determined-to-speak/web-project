@@ -13,6 +13,7 @@
         <module name="network-main" />
         <module name="web-common" />
         <module name="javabasis-main" />
+        <module name="elasticsearch-main" />
         <module name="grpc-main" />
       </profile>
     </annotationProcessing>
@@ -22,6 +23,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="elasticsearch-main" options="-parameters" />
       <module name="grpc-client" options="-parameters" />
       <module name="grpc-main" options="-parameters" />
       <module name="javabasis-main" options="-parameters" />

@@ -36,6 +36,7 @@
         <module>grpc-client</module>
         <module>javabasis-main</module>
         <module>springboot-main</module>
+        <module>elasticsearch-main</module>
     </modules>
 
     <properties>
