@@ -37,7 +37,7 @@ public class HelloLucene {
 
 
     /**
-     * 创建索引    每次调用一次这个方法都会重新创建索引文件，会创建一个新的段(segement)
+     * 创建索引    每次调用一次这个方法都会重新创建索引文件，segement会 +1
      */
     public void index() {
 
