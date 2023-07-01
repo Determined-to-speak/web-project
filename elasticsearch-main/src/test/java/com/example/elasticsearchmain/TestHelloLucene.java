@@ -32,4 +32,9 @@ public class TestHelloLucene {
         helloLucene.delete();
     }
 
+    @Test
+    public void testforceMergeDeletes() {
+        helloLucene.forceMergeDeletes();
+    }
+
 }

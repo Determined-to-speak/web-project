@@ -137,6 +137,7 @@ public class HelloLucene {
             System.out.println("numDocs:" + indexReader.numDocs());
             System.out.println("maxDoc:" + indexReader.maxDoc());
             System.out.println("numDeletedDocs:" + indexReader.numDeletedDocs());
+            indexReader.close();
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
@@ -144,7 +145,7 @@ public class HelloLucene {
 
 
     /**
-     * 将指定数据放入一个垃圾桶
+     * 将指定数据放入一个垃圾桶  {@link #forceMergeDeletes()} 执行真正的合并删除操作
      */
     public void delete() {
 
@@ -162,6 +163,27 @@ public class HelloLucene {
             writer.deleteDocuments(new Term("id", "1"));
             writer.commit();
 
+            writer.close();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    /**
+     * 合并删除  {@link #delete()} 只是将文档放到垃圾桶里
+     * 此方法会真正的进行删除
+     */
+    public void forceMergeDeletes() {
+        IndexWriter writer = null;
+        Directory directory = null;
+        try {
+            directory = FSDirectory.open(Paths.get("src/main/resources/index/index1"));
+
+            IndexWriterConfig indexWriterConfig = new IndexWriterConfig(new StandardAnalyzer());
+            writer = new IndexWriter(directory, indexWriterConfig);
+            writer.forceMergeDeletes();
+
+            writer.close();
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
