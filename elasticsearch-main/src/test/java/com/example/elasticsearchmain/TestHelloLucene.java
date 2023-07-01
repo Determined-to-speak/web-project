@@ -22,5 +22,14 @@ public class TestHelloLucene {
         helloLucene.seacher();
     }
 
+    @Test
+    public void testQuery() {
+        helloLucene.query();
+    }
+
+    @Test
+    public void testDelete() {
+        helloLucene.delete();
+    }
 
 }
