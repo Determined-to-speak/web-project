@@ -60,7 +60,8 @@ public class HelloLucene {
                 document = new Document();
                 //这里添加文件的原始数据
                 document.add(new Field("content", new FileReader(f)));
-                //Field.Store.YES  需要将数据存储到索引中，Field.Index.NOT_ANALYZED  不需要分词
+                //Field.Store.YES  需要将数据存储到索引中 ，Field.Index.NOT_ANALYZED  不需要分词
+                //个人理解，如果只是用Lucene的话，一般文章内容只分词-不存储就好。把摘要进行分词并存储
                 document.add(new Field("filename", f.getName(), Field.Store.YES, Field.Index.NOT_ANALYZED));
                 document.add(new Field("path", f.getAbsolutePath(), Field.Store.YES, Field.Index.NOT_ANALYZED));
                 //5、为IndexWriter添加文档到索引
@@ -84,8 +85,6 @@ public class HelloLucene {
      * 搜索
      */
     public void seacher() {
-
-
         try {
 
             //1. 创建Directory
