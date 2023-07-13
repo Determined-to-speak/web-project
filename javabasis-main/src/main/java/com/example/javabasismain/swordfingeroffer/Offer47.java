@@ -18,6 +18,12 @@ public class Offer47 {
     }
 
 
+    /**
+     * 解决思路，动态规划
+     *
+     * @param grid
+     * @return
+     */
     public static int maxValue(int[][] grid) {
         int m = grid.length, n = grid[0].length;
         for (int i = 0; i < m; i++) {
