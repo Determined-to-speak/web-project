@@ -14,6 +14,13 @@ public class Offer51 {
         System.out.println(reversePairs(nums));
     }
 
+
+    /**
+     * 归并排序的经典例题
+     *
+     * @param nums
+     * @return
+     */
     public static int reversePairs(int[] nums) {
         if (nums == null || nums.length <= 1) {
             return 0;
