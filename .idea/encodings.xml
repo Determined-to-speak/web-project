@@ -22,6 +22,8 @@
     <file url="file://$PROJECT_DIR$/network-main/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/network-main/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/network-main/src/main/resources/application.properties" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/redis-main/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/redis-main/src/main/resources/application.properties" charset="US-ASCII" />
     <file url="file://$PROJECT_DIR$/shiro-main/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/shiro-main/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/shiro-main/src/main/resources/application.properties" charset="UTF-8" />
@@ -34,6 +36,7 @@
     <file url="file://$PROJECT_DIR$/springboot-main/src/main/resources/application-prod.properties" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-main/src/main/resources/application-test.properties" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-main/src/main/resources/application.properties" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-main/test-git.txt" charset="US-ASCII" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/web-common/src/main/java" charset="UTF-8" />

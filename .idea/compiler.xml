@@ -10,6 +10,7 @@
         <module name="springboot-main" />
         <module name="grpc-client" />
         <module name="shiro-main" />
+        <module name="redis-main" />
         <module name="network-main" />
         <module name="web-common" />
         <module name="javabasis-main" />
@@ -28,6 +29,7 @@
       <module name="grpc-main" options="-parameters" />
       <module name="javabasis-main" options="-parameters" />
       <module name="network-main" options="-parameters" />
+      <module name="redis-main" options="-parameters" />
       <module name="shiro-main" options="-parameters" />
       <module name="springboot-main" options="-parameters" />
       <module name="test" options="-parameters" />
