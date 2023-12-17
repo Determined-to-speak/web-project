@@ -3,3 +3,8 @@
 /web-common/target/maven-archiver/pom.properties
 /web-common/target/web-common-1.0-SNAPSHOT.jar
 /web-common/target/web-common-1.0-SNAPSHOT-sources.jar
+
+
+/*/src/main/resources/*.properties
+./.idea
+/*/.mvn/*
