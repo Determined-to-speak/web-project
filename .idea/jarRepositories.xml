@@ -67,6 +67,11 @@
       <option name="url" value="https://mirrors.huaweicloud.com/repository/maven/" />
     </remote-repository>
     <remote-repository>
+      <option name="id" value="projectlombok.org" />
+      <option name="name" value="projectlombok.org" />
+      <option name="url" value="https://repo.huaweicloud.com/repository/maven/" />
+    </remote-repository>
+    <remote-repository>
       <option name="id" value="oschina" />
       <option name="name" value="oschina" />
       <option name="url" value="https://maven.aliyun.com/repository/public" />

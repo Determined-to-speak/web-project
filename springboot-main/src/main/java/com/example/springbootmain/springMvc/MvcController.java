@@ -1,5 +1,7 @@
 package com.example.springbootmain.springMvc;
 
+import jakarta.servlet.ServletContext;
+import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -9,8 +11,7 @@ import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 import vo.ApiResult;
 
-import javax.servlet.ServletContext;
-import javax.servlet.http.HttpServletRequest;
+
 
 @RestController
 @RequestMapping("MVCController")
