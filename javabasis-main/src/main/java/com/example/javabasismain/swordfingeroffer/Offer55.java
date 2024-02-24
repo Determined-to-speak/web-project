@@ -1,7 +1,6 @@
 package com.example.javabasismain.swordfingeroffer;
 
 import com.example.javabasismain.swordfingeroffer.util.TreeNode;
-import sun.reflect.generics.tree.Tree;
 
 import java.util.LinkedList;
 import java.util.Queue;
