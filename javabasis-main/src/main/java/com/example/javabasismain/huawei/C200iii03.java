@@ -1,8 +1,10 @@
 package com.example.javabasismain.huawei;
 
 
+import java.util.*;
+
 /**
- * 743. 网络延迟时间
+ * 743. 网络延迟时间      Dijkstra经典算法
  * <p>
  * 有 n 个网络节点，标记为 1 到 n。
  * <p>
@@ -16,6 +18,40 @@ public class C200iii03 {
     }
 
     public static int networkDelayTime(int[][] times, int n, int k) {
-        return 0;
+        //使用邻接表表示图结构
+        Map<Integer, ArrayList<int[]>> graph = new HashMap<>();
+
+        for (int[] time : times) {
+            int u = time[0], v = time[1], w = time[2];
+            graph.putIfAbsent(u, new ArrayList<>());
+            graph.get(u).add(new int[]{v, w});
+        }
+        int[] dist = new int[n + 1];
+        Arrays.fill(dist, Integer.MAX_VALUE);
+        dist[k] = 0;
+
+        PriorityQueue<Integer> priorityQueue = new PriorityQueue<>((a, b) -> dist[a] - dist[b]);
+        priorityQueue.add(k);
+
+        while (priorityQueue.size() > 0) {
+            k = priorityQueue.poll();
+
+            if (graph.containsKey(k)) {
+                for (int[] next : graph.get(k)) {
+                    int v = next[0], w = next[1];
+                    int newDist = dist[k] + w;
+                    if (dist[v] > newDist) {
+                        dist[v] = newDist;
+                        priorityQueue.add(v);
+                    }
+                }
+            }
+        }
+
+        int ans = 0;
+        for (int i = 1; i < dist.length; i++) {
+            ans = Math.max(ans, dist[i]);
+        }
+        return ans == Integer.MAX_VALUE ? -1 : ans;
     }
 }
