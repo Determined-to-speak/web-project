@@ -38,6 +38,7 @@ public class C200iii07 {
                 graph[y][x] = 0;
             }
         }
+        System.out.println(prim(graph, n));
 
     }
 
