@@ -3,6 +3,9 @@ package com.example.javabasismain.huawei;
 import java.util.Arrays;
 import java.util.Scanner;
 
+/**
+ * 贪吃的猴子
+ */
 public class C200iii21 {
 
 
