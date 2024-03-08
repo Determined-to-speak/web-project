@@ -1,0 +1,11 @@
+package com.example.javabasismain.huawei;
+
+/**
+ * 华为OD机试 - 运输时间（Java & JS & Python & C & C++）
+ */
+public class C200iii44 {
+
+    public static void main(String[] args) {
+
+    }
+}
